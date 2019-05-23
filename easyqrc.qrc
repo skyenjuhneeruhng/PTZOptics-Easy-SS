@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/playing-1.png</file>
+        <file>assets/playing-2.png</file>
+        <file>assets/toggle-mid.png</file>
+    </qresource>
+</RCC>

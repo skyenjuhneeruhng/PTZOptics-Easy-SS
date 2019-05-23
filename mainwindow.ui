@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>271</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EasyScreenSaver</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QToolTip{
+	color : black;
+}
+QWidget#centralWidget{
+	background : #333333;
+}
+QDialog{
+	background : #333333;
+}
+QLCDNumber{
+background : white;
+}
+
+QTabWidget{
+border: none;
+}
+QTabBar::tab{
+background : black;
+color : white;
+}
+QTabBar::tab::selected{
+background : #808080;
+
+}
+QGroupBox{
+	color : white;
+	margin-top : 2ex;
+	border-radius : 5px;
+	padding : 8px;
+	padding-top : 13px;
+	 border-style: outset;
+ 	 border-width: 2px;
+	 border-color: #1f1f1f;
+}
+QMenuBar#menuBar{
+
+	background : grey;
+	color : white;
+	 border-bottom-style: outset;
+ 	 border-bottom-width: 1px;
+	 border-bottom-color: #222222;
+}
+QMenu{
+	background : grey;
+	color : #1f1f1f;
+}
+QMenu::item:selected{
+	background : #c9c9c9;
+}
+QStatusBar#statusBar{
+	background : grey;
+	color : white;
+	border-top-style: outset;
+ 	border-top-width: 1px;
+	border-top-color: #222222;
+}
+QPushButton{
+	color : white;
+	background : grey;
+	padding : 8px 5px;
+	border-radius : 3px;
+	min-width : 60px;
+}
+QPushButton:hover{
+	background : #c9c9c9;
+}
+
+QPushButton:pressed{
+	background : #474747;
+}
+
+QPushButton:disabled{
+	color : #474747;
+}
+QLineEdit{
+	color : white;
+	background : #111111;
+	padding : 3px;
+	border-radius : 3px;
+	border-color : #474747;
+	border-width : 1px;
+	border-style : inset;
+}
+QTextEdit{
+	color : white;
+	background : #111111;
+	padding : 3px;
+	border-radius : 3px;
+	border-color : white;
+	border-width : 1px;
+}
+QComboBox{
+	color : white;
+	background : #111111;
+	padding : 3px;
+	min-width : 40px;
+	border-radius : 3px;
+	border-style : inset;
+	border-width : 1px;
+	border-color : #474747;
+}
+QComboBox::drop-down{
+	
+}
+QComboBox QAbstractItemView{
+	background-color : black;
+	color : white;
+}
+QSlider::handle{
+	background : grey;
+}
+QSlider::handle:hover{
+	background : #c9c9c9;
+}
+QSlider::handle:pressed{
+	background : #474747;
+}
+QLabel{
+	color : white;
+}
+QRadioButton{
+	color : white;
+}
+QCheckBox{
+	color : white;
+}
+QRadioButton::indicator{
+	 border-style: outset;
+ 	 border-width: 2px;
+	 border-color: #1f1f1f;
+	background : white;
+	border-radius : 6px;
+}
+QRadioButton::indicator:checked{
+	 border-style: outset;
+ 	 border-width: 2px;
+	 border-color: white;
+	background : #1f1f1f;
+	border-radius : 6px;
+}
+QCheckBox::indicator{
+	 border-style: outset;
+ 	 border-width: 2px;
+	 border-color: #1f1f1f;
+	background : white;
+}
+QCheckBox::indicator:checked{
+	 border-style: outset;
+ 	 border-width: 2px;
+	 border-color: white;
+	background : #1f1f1f;
+}
+QHeaderView::section{
+	border-style : outset;
+	border-width : 1px;
+	border-color : #c9c9c9;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Configuration:</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Choose an application:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLineEdit" name="lineEdit"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>Browse</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Idle time(Min)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_2"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QCheckBox" name="checkBox">
+             <property name="text">
+              <string>Run on windows startup</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_2">
+             <property name="text">
+              <string>Run as administrator</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_3">
+             <property name="text">
+              <string>Turn on upon launch</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>Start</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Apply</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
