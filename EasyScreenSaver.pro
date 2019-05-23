@@ -18,7 +18,7 @@ TEMPLATE = app
 DEFINES += QT_DEPRECATED_WARNINGS
 DESTDIR = $$PWD/../rundir
 OBJECTS_DIR = $$PWD/../objs
-
+RC_ICONS = app.ico
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
@@ -29,15 +29,21 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     essapp.cpp \
-    appsettings.cpp
+    appsettings.cpp \
+    processhandler.cpp
 
 HEADERS += \
         mainwindow.h \
     essapp.h \
-    appsettings.h
+    appsettings.h \
+    processhandler.h
 
 FORMS += \
         mainwindow.ui
 
 RESOURCES += \
     easyqrc.qrc
+
+LIBS += $$PWD/libs/AdvAPI32.Lib
+
+

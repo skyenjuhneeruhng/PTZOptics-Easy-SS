@@ -3,5 +3,6 @@
         <file>assets/playing-1.png</file>
         <file>assets/playing-2.png</file>
         <file>assets/toggle-mid.png</file>
+        <file>assets/trayicon.png</file>
     </qresource>
 </RCC>

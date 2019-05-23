@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QShowEvent>
 namespace Ui {
 class MainWindow;
 }
@@ -17,6 +17,16 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    void loadSettings();
+    void initUi();
+private slots:
+    void onBrowseBtnClicked();
+    void onStartBtnClicked();
+    void onApplyBtnClicked();
+    void onCancelBtnClicked();
+
+protected:
+    void showEvent(QShowEvent *ev);
 };
 
 #endif // MAINWINDOW_H

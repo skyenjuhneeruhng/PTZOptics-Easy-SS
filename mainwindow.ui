@@ -195,10 +195,14 @@ QHeaderView::section{
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout">
            <item>
-            <widget class="QLineEdit" name="lineEdit"/>
+            <widget class="QLineEdit" name="appPathEdit">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton">
+            <widget class="QPushButton" name="browseBtn">
              <property name="text">
               <string>Browse</string>
              </property>
@@ -218,21 +222,21 @@ QHeaderView::section{
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_2"/>
+          <widget class="QLineEdit" name="idleTimeEdit"/>
          </item>
         </layout>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
-          <widget class="QCheckBox" name="checkBox_3">
+          <widget class="QCheckBox" name="turnOnUponLaunchCheck">
            <property name="text">
             <string>Turn on upon launch</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox">
+          <widget class="QCheckBox" name="runOnWindowStartupCheck">
            <property name="text">
             <string>Run on windows startup</string>
            </property>
@@ -241,7 +245,7 @@ QHeaderView::section{
         </layout>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox_2">
+        <widget class="QCheckBox" name="runAsAdminCheck">
          <property name="text">
           <string>Run as administrator</string>
          </property>
@@ -253,7 +257,7 @@ QHeaderView::section{
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
-       <widget class="QPushButton" name="pushButton_4">
+       <widget class="QPushButton" name="startBtn">
         <property name="text">
          <string>Start</string>
         </property>
@@ -270,14 +274,14 @@ QHeaderView::section{
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="applyBtn">
         <property name="text">
          <string>Apply</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="cancelBtn">
         <property name="text">
          <string>Cancel</string>
         </property>
